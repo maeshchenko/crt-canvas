@@ -88,3 +88,8 @@ const pixelQnty = 16;
 drawPixels(200,0, 100, 100, pixelQnty, pixelColorArr1);
 drawPixels(200,110, 100, 100, pixelQnty, pixelColorArr2);
 drawPixels(200,220, 100, 100, pixelQnty, pixelColorArr3);
+
+// теперь надо получить цвета с канваса.
+// делим изображение на квадраты и в каждом считаем средний цвет
+// добавляем его в массив
+// по этому массиву запускаем drawPixels
