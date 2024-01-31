@@ -5,6 +5,19 @@
         <title>Webpack App</title>
     </head>
     <body>
-    <canvas width="500px" height="500px"></canvas>
+
+    <div style="position: absolute; top: 10px; left: 100px">
+        <canvas id="result-crt" width="810px" height="810px"></canvas>
+    </div>
+    <div style="position: absolute; top: 600px; left: 0px; display: none">
+        <video id="source-video" width="60" height="60" controls>
+            <source src="chip4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div style="position:absolute; top: 200px; left: 1000px; display: flex; flex-flow: column">
+        <canvas id="source" width="60px" height="60px"></canvas>
+        <button id="btn">Нажми меня</button>
+    </div>
     </body>
 </html>
