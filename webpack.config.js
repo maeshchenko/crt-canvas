@@ -26,7 +26,7 @@ const config = {
         }),
         new CopyWebpackPlugin({
             patterns:[
-                {from: 'public'}
+                {from: 'public', to:'dist'}
             ]
         })
     ],
