@@ -32,6 +32,7 @@ const x_video_offset = 220;
 const y_video_offset = 284;
 
 video.addEventListener("play", () => {
+    console.log('PLAY!: ', ctx_result);
     function step() {
         ctx_result.fillStyle = '#2a2a2a';
         ctx_result.fillRect(110,280,592, 384);
