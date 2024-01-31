@@ -11,13 +11,18 @@ ctx_source.fillRect(0,0,canvas_result.width, canvas_result.height);
 ctx_source.fill();
 
 const img1 = new Image();
-img1.src = 'https://maeshchenko.github.io/crt-canvas/public/tv.png';
+img1.src = 'public/tv1.png';
+img1.setAttribute('crossOrigin', '');
+img1.crossOrigin = `Anonymous`;
 
 img1.onload = function(){
     ctx_result.drawImage(img1, 0, 0, canvas_result.width, canvas_result.height);
 }
 
 const video = document.getElementById("source-video") as HTMLVideoElement;
+video.setAttribute('crossOrigin', '');
+video.crossOrigin = `Anonymous`;
+
 const video_btn = document.getElementById('btn') as HTMLButtonElement;
 
 video_btn.onclick = () => {
@@ -28,14 +33,14 @@ video_btn.onclick = () => {
     }
 }
 
-const x_video_offset = 220;
-const y_video_offset = 284;
+const x_video_offset = 232;
+const y_video_offset = 292;
 
 video.addEventListener("play", () => {
     console.log('PLAY!: ', ctx_result);
     function step() {
         ctx_result.fillStyle = '#2a2a2a';
-        ctx_result.fillRect(110,280,592, 384);
+        ctx_result.fillRect(218,284,390, 389);
         ctx_result.fill();
 
         ctx_source.drawImage(video, 0, 0, 60, 60);
