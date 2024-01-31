@@ -11,7 +11,7 @@ ctx_source.fillRect(0,0,canvas_result.width, canvas_result.height);
 ctx_source.fill();
 
 const img1 = new Image();
-img1.src = 'crt-canvas/public/tv.png';
+img1.src = 'public/tv.png';
 
 img1.onload = function(){
     ctx_result.drawImage(img1, 0, 0, canvas_result.width, canvas_result.height);
